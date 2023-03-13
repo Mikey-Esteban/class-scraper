@@ -1,13 +1,13 @@
 0,Start time,Sign up,Classes,Teacher,Pianist,Room,Duration
-1,   9:00 am  EDT,/ASP/res_a.asp?tg=49&classId=7530&classDate=3/14/2023&clsLoc=1,IN-STUDIO Mat Pilates Class,Ashley Carter,none,Studio 2, 1 hour
-2,   9:00 am  EDT,/ASP/res_a.asp?tg=22&classId=7533&classDate=3/14/2023&clsLoc=1,LIVE-STREAM Mat Pilates Class,Ashley Carter,none,none, 1 hour
-3,   9:15 am  EDT,/ASP/res_a.asp?tg=49&classId=7517&classDate=3/14/2023&clsLoc=1,IN-STUDIO Advanced Beginner Ballet,Shirley Bassat,none,Studio 5, 1 hour & 30 minutes
-4,   10:00 am  EDT,/ASP/res_a.asp?tg=49&classId=7580&classDate=3/14/2023&clsLoc=1,IN-STUDIO Beginner Ballet,Ginger Thatcher,none,Studio 2, 1 hour & 30 minutes
-5,   11:30 am  EDT,/ASP/res_a.asp?tg=49&classId=7557&classDate=3/14/2023&clsLoc=1,IN-STUDIO Intermediate Ballet,Shirley Bassat,none,Studio 2, 1 hour & 30 minutes
-6,   11:30 am  EDT,/ASP/res_a.asp?tg=49&classId=7537&classDate=3/14/2023&clsLoc=1,IN-STUDIO Introduction to Ballet,Julie Voshell,none,Studio 5, 1 hour & 30 minutes
-7,   12:00 pm  EDT,/ASP/res_a.asp?tg=22&classId=7547&classDate=3/14/2023&clsLoc=1,VIRTUAL Basic Beginner/Beginner Ballet,Anne Kelly,none,none, 1 hour & 15 minutes
-8,   6:00 pm  EDT,/ASP/res_a.asp?tg=49&classId=7570&classDate=3/14/2023&clsLoc=1,IN-STUDIO Basic Beginner Ballet,Lorna Zawacki,none,Studio 4, 1 hour & 30 minutes
-9,   7:30 pm  EDT,/ASP/res_a.asp?tg=49&classId=7518&classDate=3/14/2023&clsLoc=1,IN-STUDIO Advanced Beginner Ballet,Ashley Talluto (3),none,Studio 1, 1 hour & 30 minutes
-10,   7:30 pm  EDT,/ASP/res_a.asp?tg=49&classId=7558&classDate=3/14/2023&clsLoc=1,IN-STUDIO Intermediate Ballet,Julie Voshell,none,Studio 3, 1 hour & 30 minutes
-11,   7:30 pm  EDT,/ASP/res_a.asp?tg=49&classId=7664&classDate=3/14/2023&clsLoc=1,IN-STUDIO Introduction to Ballet,Hope Ruth,none,Studio 5, 1 hour & 30 minutes
-12,   7:30 pm  EDT,/ASP/res_a.asp?tg=49&classId=7581&classDate=3/14/2023&clsLoc=1,IN-STUDIO Beginner Ballet,Lorna Zawacki,none,Studio 4, 1 hour & 30 minutes
+1,9:00 am  EDT,/ASP/res_a.asp?tg=49&classId=7530&classDate=3/14/2023&clsLoc=1,IN-STUDIO Mat Pilates Class,Ashley Carter,none,Studio 2,1 hour
+2,9:00 am  EDT,/ASP/res_a.asp?tg=22&classId=7533&classDate=3/14/2023&clsLoc=1,LIVE-STREAM Mat Pilates Class,Ashley Carter,none,none,1 hour
+3,9:15 am  EDT,/ASP/res_a.asp?tg=49&classId=7517&classDate=3/14/2023&clsLoc=1,IN-STUDIO Advanced Beginner Ballet,Shirley Bassat,none,Studio 5,1 hour & 30 minutes
+4,10:00 am  EDT,/ASP/res_a.asp?tg=49&classId=7580&classDate=3/14/2023&clsLoc=1,IN-STUDIO Beginner Ballet,Ginger Thatcher,none,Studio 2,1 hour & 30 minutes
+5,11:30 am  EDT,/ASP/res_a.asp?tg=49&classId=7557&classDate=3/14/2023&clsLoc=1,IN-STUDIO Intermediate Ballet,Shirley Bassat,none,Studio 2,1 hour & 30 minutes
+6,11:30 am  EDT,/ASP/res_a.asp?tg=49&classId=7537&classDate=3/14/2023&clsLoc=1,IN-STUDIO Introduction to Ballet,Julie Voshell,none,Studio 5,1 hour & 30 minutes
+7,12:00 pm  EDT,/ASP/res_a.asp?tg=22&classId=7547&classDate=3/14/2023&clsLoc=1,VIRTUAL Basic Beginner/Beginner Ballet,Anne Kelly,none,none,1 hour & 15 minutes
+8,6:00 pm  EDT,/ASP/res_a.asp?tg=49&classId=7570&classDate=3/14/2023&clsLoc=1,IN-STUDIO Basic Beginner Ballet,Lorna Zawacki,none,Studio 4,1 hour & 30 minutes
+9,7:30 pm  EDT,/ASP/res_a.asp?tg=49&classId=7518&classDate=3/14/2023&clsLoc=1,IN-STUDIO Advanced Beginner Ballet,Ashley Talluto (3),none,Studio 1,1 hour & 30 minutes
+10,7:30 pm  EDT,/ASP/res_a.asp?tg=49&classId=7558&classDate=3/14/2023&clsLoc=1,IN-STUDIO Intermediate Ballet,Julie Voshell,none,Studio 3,1 hour & 30 minutes
+11,7:30 pm  EDT,/ASP/res_a.asp?tg=49&classId=7664&classDate=3/14/2023&clsLoc=1,IN-STUDIO Introduction to Ballet,Hope Ruth,none,Studio 5,1 hour & 30 minutes
+12,7:30 pm  EDT,/ASP/res_a.asp?tg=49&classId=7581&classDate=3/14/2023&clsLoc=1,IN-STUDIO Beginner Ballet,Lorna Zawacki,none,Studio 4,1 hour & 30 minutes

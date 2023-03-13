@@ -1,8 +1,9 @@
 from selenium.webdriver.common.by import By
 from datetime import date
+import datetime
 
 def get_date():
-    return date.today().strftime("%d_%m_%Y")
+    return (date.today() + datetime.timedelta(days=1)).strftime("%d_%m_%Y")
 
 def move_to_table(browser, tab_id):
     browser.implicitly_wait(20)
@@ -61,7 +62,7 @@ def get_class_data(browser, rows):
             if index == 1:
                 add_sign_up_link(td, row_data)
             else:
-                row_data.append('none') if td.text.strip() == '' else row_data.append(td.text)
+                row_data.append('none') if td.text.strip() == '' else row_data.append(td.text.strip())
 
         class_data.append(row_data)
 
