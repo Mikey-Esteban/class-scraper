@@ -1,0 +1,59 @@
+0,Start time,Sign up,Classes,Teacher,Location,Duration
+1,none,,,,,
+2,   Ballet,,,,,
+3,   9:00 am  EDT,/ASP/res_a.asp?tg=91&classId=2147082818&classDate=3/14/2023&clsLoc=1,Virtual 90 Int Ballet,Cave,Steps on Broadway, 1 hour & 30 minutes
+4,   9:45 am  EDT,/ASP/res_a.asp?tg=91&classId=2147083045&classDate=3/14/2023&clsLoc=1,Virtual 90 Int/Adv Pro Ballet,Hawk,Steps on Broadway, 1 hour & 30 minutes
+5,   10:00 am  EDT,/ASP/res_a.asp?tg=91&classId=2147083046&classDate=3/14/2023&clsLoc=1,Virtual 90 Adv Pro Ballet,Beloserkovsky,Steps on Broadway, 1 hour & 30 minutes
+6,   10:30 am  EDT,/ASP/res_a.asp?tg=91&classId=2147082346&classDate=3/14/2023&clsLoc=1,Virtual 90 Rommett Floor Barre,Wesley,Steps on Broadway, 1 hour & 30 minutes
+7,   11:00 am  EDT,/ASP/res_a.asp?tg=91&classId=2147084562&classDate=3/14/2023&clsLoc=1,Virtual 90 Adv/Beg Ballet,Kemezis,Steps on Broadway, 1 hour & 30 minutes
+8,   11:30 am  EDT,/ASP/res_a.asp?tg=91&classId=2147083038&classDate=3/14/2023&clsLoc=1,Virtual 90 Adv Pro Ballet,Bielski,Steps on Broadway, 1 hour & 30 minutes
+9,   1:30 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147083048&classDate=3/14/2023&clsLoc=1,Virtual 90 Int Ballet,Hara,Steps on Broadway, 1 hour & 30 minutes
+10,   3:15 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147084936&classDate=3/14/2023&clsLoc=1,Virtual 90 Int Ballet,Froman,Steps on Broadway, 1 hour & 30 minutes
+11,   5:00 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147085313&classDate=3/14/2023&clsLoc=1,Virtual 90 Adv/Int Ballet,Boos (1),Steps on Broadway, 1 hour & 30 minutes
+12,   6:45 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147083050&classDate=3/14/2023&clsLoc=1,Virtual 90 Beg/Int Ballet,Hawk,Steps on Broadway, 1 hour & 30 minutes
+13,none,,,,,
+14,   Contemporary,,,,,
+15,   11:45 am  EDT,/ASP/res_a.asp?tg=91&classId=2147085081&classDate=3/14/2023&clsLoc=1,Virtual 90 Adv/Int Contemporary,"Lewis, T.",Steps on Broadway, 1 hour & 30 minutes
+16,   4:45 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147084944&classDate=3/14/2023&clsLoc=1,Virtual 90 Int Contemporary,Minutoli,Steps on Broadway, 1 hour & 30 minutes
+17,none,,,,,
+18,   Jazz,,,,,
+19,   12:45 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147086070&classDate=3/14/2023&clsLoc=1,Virtual 90 Int Jazz,Whitehead,Steps on Broadway, 1 hour & 30 minutes
+20,   2:30 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147085023&classDate=3/14/2023&clsLoc=1,Virtual 90 Int Jazz,Gold,Steps on Broadway, 1 hour & 30 minutes
+21,   3:00 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147084788&classDate=3/14/2023&clsLoc=1,Virtual 90 Adv/Int Jazz,Roshe,Steps on Broadway, 1 hour & 30 minutes
+22,   4:15 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147084900&classDate=3/14/2023&clsLoc=1,Virtual 90 Adv/Beg Jazz,Wasiuta (2),Steps on Broadway, 1 hour & 30 minutes
+23,   8:30 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147085384&classDate=3/14/2023&clsLoc=1,Virtual 90 Adv/Int Jazz Funk,Keeney,Steps on Broadway, 1 hour & 30 minutes
+24,none,,,,,
+25,   Spotlight,,,,,
+26,   8:15 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147086144&classDate=3/14/2023&clsLoc=1,Virtual Spotlight: Int/Adv Contemporary,Drablos,Steps on Broadway, 2 hours
+27,none,,,,,
+28,   Street/Hip Hop,,,,,
+29,   7:00 pm  EDT,/ASP/res_a.asp?tg=90&classId=2147085374&classDate=3/14/2023&clsLoc=1,Virtual 60 Beg Hip Hop,Dunn,Steps on Broadway, 1 hour
+30,   8:00 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147083820&classDate=3/14/2023&clsLoc=1,Virtual 90 Open Street Styles,"Smith, C.",Steps on Broadway, 1 hour & 30 minutes
+31,   8:15 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147085382&classDate=3/14/2023&clsLoc=1,Virtual 90 Open Heels,Sauls,Steps on Broadway, 1 hour & 30 minutes
+32,none,,,,,
+33,   Stretch & Strengthening,,,,,
+34,   3:00 pm  EDT,/ASP/res_a.asp?tg=90&classId=2147083133&classDate=3/14/2023&clsLoc=1,Virtual 60 Pilates Mat,Cummings,Steps on Broadway, 1 hour
+35,   7:30 pm  EDT,/ASP/res_a.asp?tg=90&classId=2147084480&classDate=3/14/2023&clsLoc=1,Virtual 60 Cardio Dance,Ashleigh,Steps on Broadway, 1 hour
+36,none,,,,,
+37,   Swing/Ballroom,,,,,
+38,   7:45 pm  EDT,/ASP/res_a.asp?tg=90&classId=2147084890&classDate=3/14/2023&clsLoc=1,Virtual 60 Adv/Beg Swing,Weisbond,Steps on Broadway, 1 hour
+39,none,,,,,
+40,   Tap,,,,,
+41,   11:00 am  EDT,/ASP/res_a.asp?tg=91&classId=2147084705&classDate=3/14/2023&clsLoc=1,Virtual 90 Adv/Beg Broadway Tap,Black,Steps on Broadway, 1 hour & 30 minutes
+42,   12:00 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147082348&classDate=3/14/2023&clsLoc=1,Virtual 90 Int Tap,Carminucci,Steps on Broadway, 1 hour & 30 minutes
+43,   12:45 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147084706&classDate=3/14/2023&clsLoc=1,Virtual 90 Beg Broadway Tap,Black,Steps on Broadway, 1 hour & 30 minutes
+44,   2:30 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147083919&classDate=3/14/2023&clsLoc=1,Virtual 90 Adv/Beg Tap,MacDonald,Steps on Broadway, 1 hour & 30 minutes
+45,   5:30 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147082996&classDate=3/14/2023&clsLoc=1,Virtual 90 Int Tap,MacDonald,Steps on Broadway, 1 hour & 30 minutes
+46,   6:00 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147085049&classDate=3/14/2023&clsLoc=1,Virtual 90 Beg Broadway Tap,Winans,Steps on Broadway, 1 hour & 30 minutes
+47,   7:15 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147082371&classDate=3/14/2023&clsLoc=1,Virtual 90 Advanced Tap,Carminucci,Steps on Broadway, 1 hour & 30 minutes
+48,none,,,,,
+49,   Theater Dance/Jazz,,,,,
+50,   11:30 am  EDT,/ASP/res_a.asp?tg=91&classId=2147084622&classDate=3/14/2023&clsLoc=1,Virtual 90 Adv/Beg Theater Jazz,McRoberts,Steps on Broadway, 1 hour & 30 minutes
+51,   1:15 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147085703&classDate=3/14/2023&clsLoc=1,Virtual 90 Adv Theater Dance,"Lewis, S.",Steps on Broadway, 1 hour & 30 minutes
+52,   1:15 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147082355&classDate=3/14/2023&clsLoc=1,Virtual 90 Int Classic Theater Jazz,Moore,Steps on Broadway, 1 hour & 30 minutes
+53,   4:45 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147084662&classDate=3/14/2023&clsLoc=1,Virtual 90 Adv/Int Theater Jazz,Griffin,Steps on Broadway, 1 hour & 30 minutes
+54,   6:30 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147085411&classDate=3/14/2023&clsLoc=1,Virtual 90 Adv/Beg Theater Jazz,TBA (3),Steps on Broadway, 1 hour & 30 minutes
+55,none,,,,,
+56,   World Dance,,,,,
+57,   7:00 pm  EDT,/ASP/res_a.asp?tg=91&classId=2147082370&classDate=3/14/2023&clsLoc=1,Virtual 90 Open Afro Brazilian,Silva,Steps on Broadway, 1 hour & 30 minutes
+58,Regularly Scheduled: (1) Giljane (2) Gardner (3) Biagini,,,,,
