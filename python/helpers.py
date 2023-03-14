@@ -5,6 +5,14 @@ import datetime
 def get_date():
     return (date.today() + datetime.timedelta(days=1)).strftime("%d_%m_%Y")
 
+def day_suffix(myDate):
+    date_suffix = ["th", "st", "nd", "rd"]
+
+    if myDate % 10 in [1, 2, 3] and myDate not in [11, 12, 13]:
+        return date_suffix[myDate % 10]
+    else:
+        return date_suffix[0]
+
 def move_to_table(browser, tab_id):
     browser.implicitly_wait(20)
     tab = browser.find_element(By.ID, tab_id)
