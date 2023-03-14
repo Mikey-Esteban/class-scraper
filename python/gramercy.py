@@ -59,7 +59,12 @@ def run():
         if i == 1:
             class_row.append(stripped_text)
         elif i == 2:
-            class_row.append(f'{stripped_text} {correct_day_elements[index + 1].text.strip()}')
+            # reset everything
+            if (stripped_text == 'available for rentals'):
+                i = 0
+                class_row = []
+            else:
+                class_row.append(f'{stripped_text} {correct_day_elements[index + 1].text.strip()}')
         elif i == 3:
             class_row.append(el.get_attribute('href'))
         elif i == 4:
@@ -68,8 +73,7 @@ def run():
             i = 0
             class_row = []
 
-                
-    pd.DataFrame(classes_data).to_csv(f"csv/{get_date()}/gramercy.csv", header=False)
+    pd.DataFrame(classes_data).to_csv(f"csv/{get_date()}/gramercy.csv", header=False, index=False)
     
     browser.quit()
         

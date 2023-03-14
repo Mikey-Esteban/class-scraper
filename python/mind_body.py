@@ -24,7 +24,7 @@ def run():
             else:
                 class_data = func(browser, tab_id)
 
-            pd.DataFrame(class_data).to_csv(f"csv/{get_date()}/{studio['filenames'][index]}", header=False)
+            pd.DataFrame(class_data).to_csv(f"csv/{get_date()}/{studio['filenames'][index]}", header=False, index=False)
         
         browser.quit()
         

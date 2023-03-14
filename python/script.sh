@@ -2,3 +2,4 @@
 python3 mind_body.py
 python3 gramercy.py
 python3 modega.py
+python3 pjm.py

@@ -39,7 +39,7 @@ def run():
         sign_up = instructor_sign_up_div.find_element(By.CLASS_NAME, 'ml-2').find_element(By.CLASS_NAME, 'btn').get_attribute('href')
         classes_data.append([time, sign_up, name, instructor])
 
-    pd.DataFrame(classes_data).to_csv(f"csv/{get_date()}/modega.csv", header=False)
+    pd.DataFrame(classes_data).to_csv(f"csv/{get_date()}/modega.csv", header=False, index=False)
 
     browser.quit()
 
