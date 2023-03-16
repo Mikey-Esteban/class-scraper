@@ -38,7 +38,7 @@ def login(browser):
 
 def add_header(browser, class_data):
     header_row = browser.find_elements(By.CLASS_NAME, 'floatingHeader-loaded')
-    header_data = []
+    header_data = ['Studio']
     for th in header_row:
         header_data.append('Sign up') if th.text == ' ' else header_data.append(th.text)
 
@@ -59,13 +59,13 @@ def add_sign_up_link(td, row_data):
         row_data.append('none')
 
 
-def get_class_data(browser, rows):
+def get_class_data(browser, rows, studio_name):
     
     class_data = add_header(browser, [])
 
     for row in rows:
         tds = row.find_elements(By.TAG_NAME, 'td')
-        row_data = []
+        row_data = [studio_name]
         for index, td in enumerate(tds):
             if index == 1:
                 add_sign_up_link(td, row_data)
@@ -86,7 +86,8 @@ def split_class_data(class_data):
         if i == 0:
             continue
         try:
-            row_text = row[2].lower()
+            # class is 4th column
+            row_text = row[3].lower()
             if 'virtual' in row_text or 'online' in row_text or 'livestream' in row_text or 'live-' in row_text:
                 virtual_classes.append(row)
             else:

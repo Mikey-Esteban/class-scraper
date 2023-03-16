@@ -19,14 +19,16 @@ from full_week import *
 
 studios = [
     {
-        'name': 'aileystudios', 
+        'name': 'aileystudios',
+        'table_name': 'Ailey Studios',
         'id':'851', 
         'tab_ids': ['tabA10','tabA111'], 
         'func': run_even_odds_csv, 
         'filenames': ['ailey.csv', 'ailey.csv']
     },
     {
-        'name': 'atdf', 
+        'name': 'atdf',
+        'table_name': 'ATDF',
         'id':'14721', 
         'tab_ids': ['tabA118'], 
         'func': run_full_week_csv, 
@@ -34,7 +36,8 @@ studios = [
         'filenames': ['atdf.csv']
     },
     {
-        'name': 'balletacademyeast', 
+        'name': 'balletacademyeast',
+        'table_name': 'Ballet Academy East',
         'id': '30500', 
         'tab_ids': ['tabA7'], 
         'func': run_full_week_csv, 
@@ -42,21 +45,24 @@ studios = [
         'filenames': ['ballet_academy_east.csv']
     },
     {
-        'name': 'balletarts', 
+        'name': 'balletarts',
+        'table_name': 'Ballet Arts',
         'id': '589886', 
         'tab_ids': ['tabA7'], 
         'func': run_even_odds_csv, 
         'filenames': ['ballet_arts.csv']
     },
     {
-        'name': 'broadwaydancecenter', 
+        'name': 'broadwaydancecenter',
+        'table_name': 'Broadway Dance Center',
         'id': '28329', 
         'tab_ids': ['tabA7'], 
         'func': run_even_odds_csv, 
         'filenames': ['bdc.csv']
     },
     {
-        'name': 'brickhouse', 
+        'name': 'brickhouse',
+        'table_name': 'Brickhouse',
         'id': '807568', 
         'tab_ids': ['tabA7'], 
         'func': run_full_week_csv, 
@@ -64,7 +70,8 @@ studios = [
         'filenames': ['brickhouse.csv']
     },
     {
-        'name': 'cumbe', 
+        'name': 'cumbe',
+        'table_name': 'Cumbe Dance Center',
         'id': '16827', 
         'tab_ids': ['tabA112', 'tabA111'], 
         'func': run_full_week_csv, 
@@ -72,7 +79,8 @@ studios = [
         'filenames': ['cumbe.csv', 'cumbe.csv']
     },
     {
-        'name': 'gibney', 
+        'name': 'gibney',
+        'table_name': 'Gibney 280',
         'id': '31459', 
         'tab_ids': ['tabA7'], 
         'func': run_full_week_csv, 
@@ -80,7 +88,8 @@ studios = [
         'filenames': ['gibney.csv']
     },
     {
-        'name': 'ild', 
+        'name': 'ild',
+        'table_name': 'ILoveDance',
         'id': '144750', 
         'tab_ids': ['tabA104', 'tabA103', 'tabA102', 'tabA105'],
         'func': run_full_week_csv, 
@@ -88,7 +97,8 @@ studios = [
         'filenames': ['ild_manhattan.csv', 'ild_nj.csv', 'ild_queens.csv', 'ild_online.csv' ]
     },
     {
-        'name': 'markmorris', 
+        'name': 'markmorris',
+        'table_name': 'Mark Morris Dance',
         'id': '95201', 
         'tab_ids': ['tabA7'], 
         'func': run_full_week_csv, 
@@ -96,7 +106,8 @@ studios = [
         'filenames': ['mark_morris.csv']
     },
     {
-        'name': 'peridance', 
+        'name': 'peridance',
+        'table_name': 'Peridance',
         'id': '38909', 
         'tab_ids': ['tabA125'], 
         'func': run_full_week_csv, 
@@ -104,7 +115,8 @@ studios = [
         'filenames': ['peridance.csv']
     },
     {
-        'name': 'pmt', 
+        'name': 'pmt',
+        'table_name': 'PMT House of Dance',
         'id': '727061', 
         'tab_ids': ['tabA7'], 
         'func': run_full_week_csv, 
@@ -112,7 +124,8 @@ studios = [
         'filenames': ['pmt.csv']
     },
     {
-        'name': 'sass', 
+        'name': 'sass',
+        'table_name': 'Sass Class',
         'id': '988409', 
         'tab_ids': ['tabA103', 'tabA106'], 
         'func': run_full_week_csv, 
@@ -120,7 +133,8 @@ studios = [
         'filenames': ['sass.csv', 'sass.csv']
     },
     {
-        'name': 'steps', 
+        'name': 'steps',
+        'table_name': 'Steps on Broadway',
         'id': '-308', 
         'tab_ids': ['tabA107', 'tabA109'], 
         'func': run_full_week_csv, 
@@ -128,7 +142,8 @@ studios = [
         'filenames': ['steps.csv', 'steps.csv']
     },
     {
-        'name': 'taylor', 
+        'name': 'taylor',
+        'table_name': 'The Taylor School',
         'id': '463013', 
         'tab_ids': ['tabA7'], 
         'func': run_full_week_csv, 

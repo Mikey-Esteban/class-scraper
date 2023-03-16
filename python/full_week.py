@@ -3,7 +3,7 @@ from datetime import date
 from selenium.webdriver.common.by import By
 from helpers import *
 
-def run_full_week_csv(browser, tab_id, date_format):
+def run_full_week_csv(browser, tab_id, studio_name, date_format):
 
     next_day = date.today() + datetime.timedelta(days=1)
 
@@ -26,6 +26,6 @@ def run_full_week_csv(browser, tab_id, date_format):
             if flag:
                 correct_date_rows.append(row)
 
-    class_data = get_class_data(browser, correct_date_rows)
+    class_data = get_class_data(browser, correct_date_rows, studio_name)
 
     return class_data

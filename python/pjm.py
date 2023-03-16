@@ -23,8 +23,8 @@ def run():
         reformatted_date = ' '.join(date_row.text.split('\n'))
         if reformatted_date == next_day_formatted: correct_date_index = i
 
-    manhattan_classes = [['Start time', 'Classes', 'Instructor', 'Length']]
-    lic_classes = [['Start time', 'Classes', 'Instructor', 'Length']]
+    manhattan_classes = [['Studio','Start time', 'Classes', 'Instructor', 'Length']]
+    lic_classes = [['Studio','Start time', 'Classes', 'Instructor', 'Length']]
 
     correct_date_container = dates_rows[correct_date_index]
     correct_date_row = correct_date_container.find_element(By.CLASS_NAME, 'sLoech5')
@@ -32,8 +32,10 @@ def run():
     for class_row in classes_rows:
         class_data = class_row.text.split('\n')[:4]
         if isManhattan(class_data[1].split(' ')[0]):
+            class_data.insert(0, 'PJM Manhattan')
             manhattan_classes.append(class_data)
         else:
+            class_data.insert(0, 'PJM LIC')
             lic_classes.append(class_data)
 
     live_man, virtual_man = split_class_data(manhattan_classes)

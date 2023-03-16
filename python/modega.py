@@ -17,6 +17,7 @@ def run():
     print('running for studio...', 'modega')
     correct_day_index = -1
 
+    # grab index of next day
     day_containers = browser.find_elements(By.CLASS_NAME, 'card-list__card-group')
     for i, day_container in enumerate(day_containers):
         if correct_day_index > -1: continue
@@ -24,7 +25,8 @@ def run():
         if (heading.text == next_day_formatted):
             correct_day_index = i
 
-    classes_data = [['Start time', 'Sign up', 'Classes', 'Instructor']]
+    # initialize header
+    classes_data = [['Studio','Start time', 'Sign up', 'Classes', 'Instructor']]
     classes_container = day_containers[correct_day_index].find_elements(By.CLASS_NAME, 'class-list__card')
     for class_container in classes_container:
         card = class_container.find_element(By.CLASS_NAME, 'card-body')
@@ -33,7 +35,7 @@ def run():
         instructor_sign_up_div = card.find_element(By.CLASS_NAME, 'd-flex')
         instructor = instructor_sign_up_div.find_element(By.CLASS_NAME, 'card-text').text.strip()
         sign_up = instructor_sign_up_div.find_element(By.CLASS_NAME, 'ml-2').find_element(By.CLASS_NAME, 'btn').get_attribute('href')
-        classes_data.append([time, sign_up, name, instructor])
+        classes_data.append(['Modega',time, sign_up, name, instructor])
 
     live, virtual = split_class_data(classes_data)
 

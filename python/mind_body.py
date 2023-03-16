@@ -22,9 +22,9 @@ def run():
         # for multiple tabs
         for index, tab_id in enumerate(studio['tab_ids']):
             if func.__name__ == 'run_full_week_csv':
-                class_data = func(browser, tab_id, studio['date_format'])
+                class_data = func(browser, tab_id, studio['table_name'], studio['date_format'])
             else:
-                class_data = func(browser, tab_id)
+                class_data = func(browser, tab_id, studio['table_name'])
 
             live, virtual = split_class_data(class_data)
 

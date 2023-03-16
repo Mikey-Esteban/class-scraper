@@ -43,8 +43,8 @@ def run():
     correct_day_heading = correct_day_row.find_element(By.TAG_NAME, 'h4')
     correct_day_elements = correct_day_heading.find_elements(By.XPATH, ".//*")
 
-    classes_data = [['Start time', 'Classes', 'Link', 'Instructor']]
-    class_row = []
+    classes_data = [['Studio','Start time', 'Classes', 'Link', 'Instructor']]
+    class_row = ['Gramercy Studios']
     i = 0
 
     # rows work in blocks of 4, skip empty content
@@ -59,7 +59,7 @@ def run():
             # reset everything
             if (stripped_text == 'available for rentals'):
                 i = 0
-                class_row = []
+                class_row = ['Gramercy Studios']
             else:
                 class_row.append(f'{stripped_text} {correct_day_elements[index + 1].text.strip()}')
         elif i == 3:
@@ -68,7 +68,7 @@ def run():
             class_row.append(stripped_text)
             classes_data.append(class_row)
             i = 0
-            class_row = []
+            class_row = ['Gramercy Studios']
 
     live, virtual = split_class_data(classes_data)
 
