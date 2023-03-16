@@ -21,16 +21,16 @@ studios = [
     {
         'name': 'aileystudios', 
         'id':'851', 
-        'tab_ids': ['tabA111', 'tabA10'], 
+        'tab_ids': ['tabA10','tabA111'], 
         'func': run_even_odds_csv, 
-        'filenames': ['ailey_online.csv', 'ailey_in_person.csv']
+        'filenames': ['ailey.csv', 'ailey.csv']
     },
     {
         'name': 'atdf', 
         'id':'14721', 
         'tab_ids': ['tabA118'], 
         'func': run_full_week_csv, 
-        'date_format': '%A %B %d, %Y', 
+        'date_format': '%a %B %d, %Y', 
         'filenames': ['atdf.csv']
     },
     {
@@ -69,7 +69,7 @@ studios = [
         'tab_ids': ['tabA112', 'tabA111'], 
         'func': run_full_week_csv, 
         'date_format': '%a %B %d, %Y', 
-        'filenames': ['cumbe_in_person.csv', 'cumbe_online.csv']
+        'filenames': ['cumbe.csv', 'cumbe.csv']
     },
     {
         'name': 'gibney', 
@@ -117,7 +117,7 @@ studios = [
         'tab_ids': ['tabA103', 'tabA106'], 
         'func': run_full_week_csv, 
         'date_format': '%a %B %d, %Y', 
-        'filenames': ['sass_in_person.csv', 'sass_online.csv']
+        'filenames': ['sass.csv', 'sass.csv']
     },
     {
         'name': 'steps', 
@@ -125,7 +125,7 @@ studios = [
         'tab_ids': ['tabA107', 'tabA109'], 
         'func': run_full_week_csv, 
         'date_format': '%A %B %d, %Y', 
-        'filenames': ['steps_in_person.csv', 'steps_online.csv']
+        'filenames': ['steps.csv', 'steps.csv']
     },
     {
         'name': 'taylor', 

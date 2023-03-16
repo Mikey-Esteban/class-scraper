@@ -73,5 +73,25 @@ def get_class_data(browser, rows):
                 row_data.append('none') if td.text.strip() == '' else row_data.append(td.text.strip())
 
         class_data.append(row_data)
-
+    
     return class_data
+
+def split_class_data(class_data):
+    # include header
+    live_classes = [class_data[0]]
+    virtual_classes = [class_data[0]]
+
+    for i,row in enumerate(class_data):
+        #skip header
+        if i == 0:
+            continue
+        try:
+            row_text = row[2].lower()
+            if 'virtual' in row_text or 'online' in row_text or 'livestream' in row_text or 'live-' in row_text:
+                virtual_classes.append(row)
+            else:
+                live_classes.append(row)
+        except:
+            continue
+
+    return live_classes, virtual_classes

@@ -1,9 +1,7 @@
-import os
 import pandas as pd
 from selenium import webdriver
 from helpers import *
 import datetime
-import time
 
 base_url = 'https://www.pjmstudionyc.com/'
 
@@ -11,8 +9,6 @@ def isManhattan(str):
     return str == '[MAN]'
 
 def run():
-    if not os.path.exists(f"csv/{get_date()}"):
-        os.makedirs(f"csv/{get_date()}")
 
     next_day_formatted = (date.today() + datetime.timedelta(days=1)).strftime('%a %d')
     browser = webdriver.Firefox()
@@ -27,25 +23,31 @@ def run():
         reformatted_date = ' '.join(date_row.text.split('\n'))
         if reformatted_date == next_day_formatted: correct_date_index = i
 
-    manhattan_classes = [['Time', 'Class', 'Instructor', 'Length']]
-    lic_classes = [['Time', 'Class', 'Instructor', 'Length']]
+    manhattan_classes = [['Start time', 'Classes', 'Instructor', 'Length']]
+    lic_classes = [['Start time', 'Classes', 'Instructor', 'Length']]
 
     correct_date_container = dates_rows[correct_date_index]
     correct_date_row = correct_date_container.find_element(By.CLASS_NAME, 'sLoech5')
     classes_rows = correct_date_row.find_elements(By.CLASS_NAME, 'sYbjzkn')
     for class_row in classes_rows:
-
-        class_data = class_row.text.split('\n')[:3]
-
+        class_data = class_row.text.split('\n')[:4]
         if isManhattan(class_data[1].split(' ')[0]):
             manhattan_classes.append(class_data)
         else:
             lic_classes.append(class_data)
 
-    if len(manhattan_classes) > 1:
-        pd.DataFrame(manhattan_classes).to_csv(f"csv/{get_date()}/pjm_manhattan.csv", header=False, index=False)
-    if len(lic_classes) > 1:
-        pd.DataFrame(lic_classes).to_csv(f"csv/{get_date()}/pjm_lic.csv", header=False, index=False)
+    live_man, virtual_man = split_class_data(manhattan_classes)
+    live_lic, virtual_lic = split_class_data(lic_classes)
+
+    if len(live_man) > 1:
+        pd.DataFrame(live_man).to_csv(f"csv/{get_date()}/live/pjm_manhattan.csv", header=False, index=False)
+    if len(virtual_man) > 1:
+        pd.DataFrame(virtual_man).to_csv(f"csv/{get_date()}/virtual/pjm_manhattan.csv", header=False, index=False)
+
+    if len(live_lic) > 1:
+        pd.DataFrame(live_lic).to_csv(f"csv/{get_date()}/live/pjm_lic.csv", header=False, index=False)
+    if len(virtual_lic) > 1:
+        pd.DataFrame(virtual_lic).to_csv(f"csv/{get_date()}/virtual/pjm_lic.csv", header=False, index=False)
 
     browser.quit()
 

@@ -1,4 +1,3 @@
-import os
 import pandas as pd
 from selenium import webdriver
 from helpers import *
@@ -8,8 +7,6 @@ import time
 base_url = 'https://www.gramercydancestudios.com/schedule'
 
 def run():
-    if not os.path.exists(f"csv/{get_date()}"):
-        os.makedirs(f"csv/{get_date()}")
 
     # grab date in 'tuesday 3/14' format
     next_day_formatted = (date.today() + datetime.timedelta(days=1)).strftime('%A %-m/%d').lower()
@@ -46,7 +43,7 @@ def run():
     correct_day_heading = correct_day_row.find_element(By.TAG_NAME, 'h4')
     correct_day_elements = correct_day_heading.find_elements(By.XPATH, ".//*")
 
-    classes_data = [['Start time', 'Class', 'Link', 'Instructor']]
+    classes_data = [['Start time', 'Classes', 'Link', 'Instructor']]
     class_row = []
     i = 0
 
@@ -73,10 +70,14 @@ def run():
             i = 0
             class_row = []
 
-    pd.DataFrame(classes_data).to_csv(f"csv/{get_date()}/gramercy.csv", header=False, index=False)
+    live, virtual = split_class_data(classes_data)
+
+    if len(live) > 1:
+        pd.DataFrame(live).to_csv(f"csv/{get_date()}/live/gramercy.csv", header=False, index=False)
+    if len(virtual) > 1:
+        pd.DataFrame(virtual).to_csv(f"csv/{get_date()}/virtual/gramercy.csv", header=False, index=False)
     
     browser.quit()
         
-
 if __name__ == '__main__':
     run()

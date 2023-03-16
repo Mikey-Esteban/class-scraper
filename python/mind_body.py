@@ -7,8 +7,9 @@ from studio import *
 base_url = 'https://clients.mindbodyonline.com/classic/mainclass?studioid='
 
 def run():
-    if not os.path.exists(f"csv/{get_date()}"):
-        os.makedirs(f"csv/{get_date()}")
+    for folder in ['live', 'virtual', 'social']:
+        if not os.path.exists(f"csv/{get_date()}/{folder}"):
+            os.makedirs(f"csv/{get_date()}/{folder}")
 
     for studio in studios:
         browser = webdriver.Firefox()
@@ -18,16 +19,21 @@ def run():
 
         func = studio['func']
 
+        # for multiple tabs
         for index, tab_id in enumerate(studio['tab_ids']):
             if func.__name__ == 'run_full_week_csv':
                 class_data = func(browser, tab_id, studio['date_format'])
             else:
                 class_data = func(browser, tab_id)
 
-            pd.DataFrame(class_data).to_csv(f"csv/{get_date()}/{studio['filenames'][index]}", header=False, index=False)
+            live, virtual = split_class_data(class_data)
+
+            if len(live) > 1:
+                pd.DataFrame(live).to_csv(f"csv/{get_date()}/live/{studio['filenames'][index]}", header=False, index=False)
+            if len(virtual) > 1:
+                pd.DataFrame(virtual).to_csv(f"csv/{get_date()}/virtual/{studio['filenames'][index]}", header=False, index=False)
         
         browser.quit()
-        
 
 if __name__ == '__main__':
     run()
