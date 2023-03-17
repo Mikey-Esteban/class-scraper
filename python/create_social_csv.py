@@ -11,13 +11,14 @@ for f in files:
     print(f)
 
     df = pd.read_csv(f'{path}/{f}', index_col=False)
-
+    
+    df = fix_ild_studios(f, df)
 
     strip_time(df)
     rename_columns(df)
     remove_colon_from_class(df)
     remove_brackets_from_class(df)
-    remove_brackets_from_class(df)
+    remove_class_location(df)
     remove_type_from_instructor(df)
     shorten_class_level(df)
     remove_instructor_from_class(df)
@@ -25,4 +26,5 @@ for f in files:
     titleize_classes(df, 'Classes')
 
     df = df.dropna()
+    df = get_social_columns(strip_df(df))
     df.to_csv(f'{w_path}/{f}', index=False)

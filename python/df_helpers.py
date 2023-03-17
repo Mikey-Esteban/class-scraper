@@ -33,7 +33,7 @@ def remove_class_location(df):
 
 def remove_instructor_from_class(df):
     df['Classes'] = df['Classes'].str.split('with').str[0]
-    df['Classes'] = df['Classes'].str.split('-').str[0]
+    df['Classes'] = df['Classes'].str.split(' - ').str[0]
     return df
 
 def remove_type_from_instructor(df):
@@ -56,8 +56,24 @@ def remove_brackets_from_class(df):
 
 def shorten_class_style(df):
     df['Classes'] = df['Classes'].str.replace('contemporary', 'Contemp', case=False)
+    df['Classes'] = df['Classes'].str.replace('commercial', 'Comm', case=False)
     return df
 
 def titleize_classes(df, series):
     df[series] = df[series].str.title()
+    return df
+
+def strip_df(df):
+    return df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
+
+def get_social_columns(df):
+    return df[['Studio','Start time','Classes','Instructor']]
+
+def fix_ild_studios(filename, df):
+    if filename == 'ild_nj.csv':
+        df = df.replace('ILoveDance', 'ILoveDance NJ')
+    elif filename == 'ild_manhattan.csv':
+        df = df.replace('ILoveDance', 'ILoveDance NYC')
+    elif filename == 'ild_queens.csv':
+        df = df.replace('ILoveDance', 'ILoveDance Queens')
     return df
