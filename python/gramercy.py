@@ -1,5 +1,6 @@
 import pandas as pd
 from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
 from helpers import *
 import datetime
 import time
@@ -10,8 +11,10 @@ def run():
 
     # grab date in 'tuesday 3/14' format
     next_day_formatted = (date.today() + datetime.timedelta(days=1)).strftime('%A %-m/%d').lower()
- 
-    browser = webdriver.Firefox()
+    print(next_day_formatted)
+    options = Options()
+    options.add_argument('--headless')
+    browser = webdriver.Firefox(options=options)
     browser.implicitly_wait(20)
     browser.get(base_url)
     
@@ -20,26 +23,62 @@ def run():
     content_rows = browser.find_elements(By.CLASS_NAME, 'sqs-block-content')
 
     flag = False
-    currrent_scroll = 0
+    current_scroll = 0
     correct_date_index = -1
 
-    # scroll until date is found
+    content_rows = browser.find_elements(By.CLASS_NAME, 'fe-block')
+    print('content rows len', len(content_rows))
     for i, row in enumerate(content_rows):
         if flag: continue
+        browser.implicitly_wait(.1)
 
-        # move scroll to next date header
-        if (row.text.strip().lower().split(' ')[0] in ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday','sunday']):
-            scroll_height = browser.execute_script(f"return document.querySelectorAll('.sqs-block-content')[{i}].getBoundingClientRect().top")
-            currrent_scroll += scroll_height - header_border_height
-            browser.execute_script(f"window.scrollTo(0,{currrent_scroll})")
-            time.sleep(.3)
-
-            # date is found
-            if row.text.strip().lower() == next_day_formatted: 
-                flag = True
+        try:
+            h1 = row.find_element(By.TAG_NAME, 'h1')
+            print('h1:', h1.text.lower())
+            if h1.text.lower() != next_day_formatted: 
+                # move to top of date
+                top_of_date = browser.execute_script(f"return document.querySelectorAll('.fe-block')[{i}].getBoundingClientRect().top")
+                current_scroll += top_of_date
+                browser.execute_script(f"window.scrollTo(0,{current_scroll})")
+                # move to bottom of date
+                header_scroll_bottom = browser.execute_script(f"return document.querySelectorAll('.fe-block')[{i}].getBoundingClientRect().bottom")
+                current_scroll += header_scroll_bottom
+                browser.execute_script(f"window.scrollTo(0,{current_scroll})")
+                # move to the top of the next element
+                top_of_accordion = browser.execute_script(f"return document.querySelectorAll('.fe-block')[{i+1}].getBoundingClientRect().top")
+                current_scroll += top_of_accordion
+                browser.execute_script(f"window.scrollTo(0,{current_scroll})")
+                # move to bottom of element
+                bottom_of_accordion = browser.execute_script(f"return document.querySelectorAll('.fe-block')[{i+1}].getBoundingClientRect().bottom")
+                current_scroll += bottom_of_accordion
+                browser.execute_script(f"window.scrollTo(0,{current_scroll})")
+                time.sleep(.2)
+            else:
                 correct_date_index = i + 1
+                flag = True
+        except:
+            continue
 
+    print('FOUND ACCORDION INDEX:', correct_date_index)
     correct_day_row = content_rows[correct_date_index]
+    classes_for_date = correct_day_row.find_elements(By.TAG_NAME, 'li')
+    print('classes length', len(classes_for_date))
+    for thing in classes_for_date:
+        split = thing.text.split('w/')
+        if len(split) == 1:
+            split = thing.text.split('W/')
+        if len(split) == 1:
+            split = thing.text.split('with')
+        if len(split) == 1:
+            split = thing.text.split('WITH')
+        print(split)
+
+        time_and_name = split[0].split(' ', 1)
+        class_time = time_and_name[0]
+        class_name = time_and_name[1]
+        teacher = split[1]
+
+    print(correct_day_row)
     correct_day_heading = correct_day_row.find_element(By.TAG_NAME, 'h4')
     correct_day_elements = correct_day_heading.find_elements(By.XPATH, ".//*")
 

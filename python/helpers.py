@@ -54,7 +54,7 @@ def add_sign_up_link(td, row_data):
         # get hyperlink
         link = attribute_array[len(attribute_array) - 2]
         link = link[1:-3]
-        row_data.append(link)
+        row_data.append(f'https://clients.mindbodyonline.com{link}')
     except:
         row_data.append('none')
 
