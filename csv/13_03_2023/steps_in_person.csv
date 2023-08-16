@@ -1,0 +1,57 @@
+0,Start time,Sign up,Classes,Teacher,Location,Duration
+1,none,,,,,
+2,Ballet,,,,,
+3,9:00 am  EDT,/ASP/res_a.asp?tg=80&classId=2147082816&classDate=3/14/2023&clsLoc=1,In-Studio Int Ballet,Cave,Steps on Broadway,1 hour & 30 minutes
+4,9:45 am  EDT,/ASP/res_a.asp?tg=80&classId=2147085516&classDate=3/14/2023&clsLoc=1,In-Studio Int/Adv Pro Ballet,Hawk,Steps on Broadway,1 hour & 30 minutes
+5,10:00 am  EDT,/ASP/res_a.asp?tg=80&classId=2147085517&classDate=3/14/2023&clsLoc=1,In-Studio Adv Pro Ballet,Beloserkovsky,Steps on Broadway,1 hour & 30 minutes
+6,10:30 am  EDT,/ASP/res_a.asp?tg=80&classId=2147085518&classDate=3/14/2023&clsLoc=1,In-Studio Rommett Floor Barre,Wesley,Steps on Broadway,1 hour & 30 minutes
+7,11:00 am  EDT,/ASP/res_a.asp?tg=80&classId=2147084561&classDate=3/14/2023&clsLoc=1,In-Studio Adv/Beg Ballet,Kemezis,Steps on Broadway,1 hour & 30 minutes
+8,11:30 am  EDT,/ASP/res_a.asp?tg=80&classId=2147085489&classDate=3/14/2023&clsLoc=1,In-Studio Adv Pro Ballet,Bielski,Steps on Broadway,1 hour & 30 minutes
+9,1:30 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147085519&classDate=3/14/2023&clsLoc=1,In-Studio Int Ballet,Hara,Steps on Broadway,1 hour & 30 minutes
+10,3:15 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147085520&classDate=3/14/2023&clsLoc=1,In-Studio Int Ballet,Froman,Steps on Broadway,1 hour & 30 minutes
+11,5:00 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147085521&classDate=3/14/2023&clsLoc=1,In-Studio Adv/Int Ballet,Boos (1),Steps on Broadway,1 hour & 30 minutes
+12,6:45 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147085522&classDate=3/14/2023&clsLoc=1,In-Studio Beg/Int Ballet,Hawk,Steps on Broadway,1 hour & 30 minutes
+13,none,,,,,
+14,Contemporary,,,,,
+15,11:45 am  EDT,/ASP/res_a.asp?tg=80&classId=2147085523&classDate=3/14/2023&clsLoc=1,In-Studio Adv/Int Contemporary,"Lewis, T.",Steps on Broadway,1 hour & 30 minutes
+16,4:45 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147085524&classDate=3/14/2023&clsLoc=1,In-Studio Int Contemporary,Minutoli,Steps on Broadway,1 hour & 30 minutes
+17,none,,,,,
+18,Jazz,,,,,
+19,12:45 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147086069&classDate=3/14/2023&clsLoc=1,In-Studio Int Jazz,Whitehead,Steps on Broadway,1 hour & 30 minutes
+20,2:30 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147085022&classDate=3/14/2023&clsLoc=1,In-Studio Int Jazz,Gold,Steps on Broadway,1 hour & 30 minutes
+21,3:00 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147085527&classDate=3/14/2023&clsLoc=1,In-Studio Adv/Int Jazz,Roshe,Steps on Broadway,1 hour & 30 minutes
+22,8:30 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147085529&classDate=3/14/2023&clsLoc=1,In-Studio Adv/Int Jazz Funk,Keeney,Steps on Broadway,1 hour & 30 minutes
+23,none,,,,,
+24,Spotlight,,,,,
+25,8:15 pm  EDT,/ASP/res_a.asp?tg=89&classId=2147086143&classDate=3/14/2023&clsLoc=1,In-Studio Spotlight: Int/Adv Contemporary,Drablos,Steps on Broadway,2 hours
+26,none,,,,,
+27,Street/Hip Hop,,,,,
+28,8:00 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147083819&classDate=3/14/2023&clsLoc=1,In-Studio Open Street Styles,"Smith, C.",Steps on Broadway,1 hour & 30 minutes
+29,8:15 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147085528&classDate=3/14/2023&clsLoc=1,In-Studio Open Heels,Sauls,Steps on Broadway,1 hour & 30 minutes
+30,none,,,,,
+31,Stretch & Strengthening,,,,,
+32,3:00 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147085530&classDate=3/14/2023&clsLoc=1,In-Studio Pilates Mat,Cummings,Steps on Broadway,1 hour
+33,none,,,,,
+34,Swing/Ballroom,,,,,
+35,7:45 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147085531&classDate=3/14/2023&clsLoc=1,In-Studio Adv/Beg Swing,Weisbond,Steps on Broadway,1 hour
+36,none,,,,,
+37,Tap,,,,,
+38,11:00 am  EDT,/ASP/res_a.asp?tg=80&classId=2147085532&classDate=3/14/2023&clsLoc=1,In-Studio Adv/Beg Broadway Tap,Black,Steps on Broadway,1 hour & 30 minutes
+39,12:00 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147085533&classDate=3/14/2023&clsLoc=1,In-Studio Int Tap,Carminucci,Steps on Broadway,1 hour & 30 minutes
+40,12:45 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147085534&classDate=3/14/2023&clsLoc=1,In-Studio Beg Broadway Tap,Black,Steps on Broadway,1 hour & 30 minutes
+41,2:30 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147085536&classDate=3/14/2023&clsLoc=1,In-Studio Adv/Beg Tap,MacDonald,Steps on Broadway,1 hour & 30 minutes
+42,4:15 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147085537&classDate=3/14/2023&clsLoc=1,In-Studio Adv/Beg Tap,Wasiuta (2),Steps on Broadway,1 hour & 30 minutes
+43,5:30 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147085538&classDate=3/14/2023&clsLoc=1,In-Studio Int Tap,MacDonald,Steps on Broadway,1 hour & 30 minutes
+44,6:00 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147085539&classDate=3/14/2023&clsLoc=1,In-Studio Beg Broadway Tap,Winans,Steps on Broadway,1 hour & 30 minutes
+45,7:15 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147085540&classDate=3/14/2023&clsLoc=1,In-Studio Adv Tap,Carminucci,Steps on Broadway,1 hour & 30 minutes
+46,none,,,,,
+47,Theater Dance/Theater Jazz,,,,,
+48,11:30 am  EDT,/ASP/res_a.asp?tg=80&classId=2147085541&classDate=3/14/2023&clsLoc=1,In-Studio Adv/Beg Theater Jazz,McRoberts,Steps on Broadway,1 hour & 30 minutes
+49,1:15 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147085702&classDate=3/14/2023&clsLoc=1,In-Studio Adv Theater Dance,"Lewis, S.",Steps on Broadway,1 hour & 30 minutes
+50,1:15 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147085543&classDate=3/14/2023&clsLoc=1,In-Studio Int Classic Theater Jazz,Moore,Steps on Broadway,1 hour & 30 minutes
+51,4:45 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147085544&classDate=3/14/2023&clsLoc=1,In-Studio Adv/Int Theater Jazz,Griffin,Steps on Broadway,1 hour & 30 minutes
+52,6:30 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147085545&classDate=3/14/2023&clsLoc=1,In-Studio Adv/Beg Theater Jazz,TBA (3),Steps on Broadway,1 hour & 30 minutes
+53,none,,,,,
+54,World Dance,,,,,
+55,7:00 pm  EDT,/ASP/res_a.asp?tg=80&classId=2147085546&classDate=3/14/2023&clsLoc=1,In-Studio Open Afro Brazilian,Silva,Steps on Broadway,1 hour & 30 minutes
+56,Regularly Scheduled: (1) Giljane (2) Gardner (3) Biagini,,,,,
