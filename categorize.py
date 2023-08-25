@@ -24,19 +24,19 @@ world_dance = []
 other = []
 
 # categorization logic
-is_theater = ['theater','broadway']
 is_tap = ['tap']
+is_theater = ['theater','broadway']
 is_ballet = ['ballet','pointe','barre','ballez']
 is_contemporary_modern = ['contemp','modern','horton','graham','dunham','limón','cunningham','gaga', 'lyrical']
 is_street = ['hip hop', 'hip-hop', 'tutting', 'heels', 'styling free','stilettos',
              'popping','breaking','jerz','locking','house','street','urban',
              'chairography','vogue','choreo','pop up','funk','wacking','waacking',
-             'comm','grooves','fusion','hustle','breakin','modega','voguing', 'litefeet', 'expressive', 'krump', 'shapes', 'master']
+             'grooves','fusion','hustle','breakin','modega','voguing', 'litefeet', 'expressive', 'krump', 'shapes', 'master', 'battle', 'jen bayan']
 is_jazz = ['jazz']
 is_world = ['salsa', 'afro', 'african', 'dancehall', 'reggaeton', 'congolese', 
-            'sabar', 'haitian','mambo', 'samba', 'bhangra', 'capoeira','latin','guinean', 'indian']
+            'sabar', 'haitian','mambo', 'samba', 'bhangra', 'capoeira','latin','guinean', 'indian', 'flamenco']
 
-all_styles = [is_theater, is_tap, is_ballet, is_contemporary_modern, is_street, is_jazz, is_world]
+all_styles = [is_tap, is_theater, is_ballet, is_contemporary_modern, is_street, is_jazz, is_world]
 
 
 for f in files:
@@ -65,9 +65,9 @@ for f in files:
                 if name in class_name:
                     # add the row to the correct list
                     if (style == all_styles[0]):
-                        theater.append(row[1])
-                    elif (style == all_styles[1]):
                         tap.append(row[1])
+                    elif (style == all_styles[1]):
+                        theater.append(row[1])
                     elif (style == all_styles[2]):
                         ballet.append(row[1])
                     elif (style == all_styles[3]):
