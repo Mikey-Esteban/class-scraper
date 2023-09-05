@@ -34,7 +34,7 @@ is_street = ['hip hop', 'hip-hop', 'tutting', 'heels', 'styling free','stilettos
              'grooves','fusion','hustle','breakin','modega','voguing', 'litefeet', 'expressive', 'krump', 'shapes', 'master', 'battle', 'jen bayan', 'pop-up']
 is_jazz = ['jazz']
 is_world = ['salsa', 'afro', 'african', 'dancehall', 'reggaeton', 'congolese', 
-            'sabar', 'haitian','mambo', 'samba', 'bhangra', 'capoeira','latin','guinean', 'indian', 'flamenco']
+            'sabar', 'haitian','mambo', 'samba', 'bhangra', 'capoeira','latin','guinean', 'indian', 'flamenco', 'senegalese']
 
 all_styles = [is_tap, is_theater, is_ballet, is_contemporary_modern, is_street, is_jazz, is_world]
 
