@@ -80,7 +80,7 @@ studios = [
     },
     {
         'name': 'gibney',
-        'table_name': 'Gibney 280',
+        'table_name': 'Gibney',
         'id': '31459', 
         'tab_ids': ['tabA7'], 
         'func': run_full_week_csv, 
