@@ -143,7 +143,7 @@ studios = [
     },
     {
         'name': 'taylor',
-        'table_name': 'The Taylor School',
+        'table_name': 'Taylor School',
         'id': '463013', 
         'tab_ids': ['tabA7'], 
         'func': run_full_week_csv, 

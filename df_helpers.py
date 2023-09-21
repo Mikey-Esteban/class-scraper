@@ -20,9 +20,17 @@ def strip_time2(df):
         # Add ':00' if only the hour is provided
         if time_str[-2:].lower() in ['am', 'pm'] and time_str.count(':') == 0:
             time_str = time_str[:-2] + ':00' + time_str[-2:]
-        # Return the time in the desired format
-        return datetime.strptime(time_str, '%I:%M%p').strftime('%I:%M%p')
-
+        # Try to parse with the desired formats
+        time_formats = ['%I:%M%p', '%H:%M']
+        for fmt in time_formats:
+            try:
+                # Try to parse the string with the current format
+                return datetime.strptime(time_str, fmt).strftime('%I:%M%p')
+            except ValueError:
+                continue  # If parsing fails, try the next format
+        # If none of the formats worked, print an error and return the original string
+        print(f"Unable to parse time: {time_str}")
+        return time_str  # or return some default value, or NaN, depending on your needs
     df['Start time'] = df['Start time'].apply(reformat_time)
     return df
 
