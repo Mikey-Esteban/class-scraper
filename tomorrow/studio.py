@@ -152,7 +152,7 @@ studios = [
     },
         {
         'name': 'thehive',
-        'table_name': 'Hive Dance NJ',
+        'table_name': 'Hive NJ',
         'id': '642345', 
         'tab_ids': ['tabA7'], 
         'func': run_full_week_csv, 

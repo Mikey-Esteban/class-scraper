@@ -31,8 +31,8 @@ def move_to_table(browser, tab_id):
     today_button = browser.find_element(By.CLASS_NAME, 'today-button')
     assert today_button
     today_button.click()
-    next_day_button = browser.find_element(By.ID, 'day-arrow-r')
-    next_day_button.click()
+    # next_day_button = browser.find_element(By.ID, 'day-arrow-r')
+    # next_day_button.click()
     browser.implicitly_wait(1)
 
 def login(browser):
