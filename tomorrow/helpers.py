@@ -8,7 +8,7 @@ import datetime
 #To place a prior day's data pull into today (e.g., after midnight), modify categorize.py and csv_to_gs.py to send the correct date
 
 #Use get_date() for tomorrow's date
-def get_date_tomorrow():
+def get_date():
     return (date.today() + datetime.timedelta(days=1)).strftime("%Y%m%d")
 #Use get_date2() for labeling the table, categorize line 111 - 118 for tomorrow's date
 def get_date_tomorrow2():

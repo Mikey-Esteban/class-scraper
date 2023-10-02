@@ -4,14 +4,14 @@ from selenium.webdriver.chrome.options import Options
 from helpers import *
 import datetime
 
-base_url = 'https://www.pjmstudionyc.com/'
+base_url = 'https://www.pjmdancenyc.com/'
 
 def isManhattan(str):
     return str == '[MAN]'
 
 def run():
 
-    next_day_formatted = (date.today()).strftime('%a %d')
+    next_day_formatted = (date.today() + datetime.timedelta(days=1)).strftime('%a %d')
     options = Options()
     options.add_argument('--headless')
     browser = webdriver.Chrome(options=options)
@@ -20,7 +20,7 @@ def run():
     
     print('running for studio...', 'pjm')
     dates_rows = browser.find_elements(By.CLASS_NAME, 'sZqbM3k')
-    correct_date_index = -1
+    correct_date_index = +1
 
     for i, date_row in enumerate(dates_rows):
         reformatted_date = ' '.join(date_row.text.split('\n'))
