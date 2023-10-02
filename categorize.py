@@ -29,9 +29,9 @@ is_theater = ['theater','broadway']
 is_ballet = ['ballet','pointe','barre','ballez']
 is_contemporary_modern = ['contemp','modern','horton','graham','dunham','limón','cunningham','gaga', 'lyrical']
 is_street = ['hip hop', 'hip-hop', 'tutting', 'heels', 'styling free','stilettos',
-             'popping','breaking','jerz','locking','house','street','urban',
+             'popping','breaking','jerz','jersey','locking','house','street','urban',
              'chairography','vogue','choreo','pop up','funk','wacking','waacking',
-             'grooves','fusion','hustle','breakin','modega','voguing', 'litefeet', 'expressive', 'krump', 'shapes', 'master', 'battle', 'jen bayan', 'pop-up']
+             'grooves','fusion','hustle','breakin','modega','voguing', 'litefeet', 'expressive', 'krump', 'shapes', 'master', 'battle', 'jen bayan', 'pop-up', 'freestyle session']
 is_jazz = ['jazz']
 is_world = ['salsa', 'afro', 'african', 'dancehall', 'reggaeton', 'congolese', 
             'sabar', 'haitian','mambo', 'samba', 'bhangra', 'capoeira','latin','guinean', 'indian', 'flamenco', 'senegalese']
