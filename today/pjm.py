@@ -11,7 +11,7 @@ def isManhattan(str):
 
 def run():
 
-    next_day_formatted = (date.today() + datetime.timedelta(days=1)).strftime('%a %d')
+    next_day_formatted = (date.today()).strftime('%a %d')
     options = Options()
     options.add_argument('--headless')
     browser = webdriver.Chrome(options=options)

@@ -5,7 +5,7 @@ from helpers import *
 
 def run_full_week_csv(browser, tab_id, studio_name, date_format):
 
-    next_day = date.today() + datetime.timedelta(days=1)
+    next_day = date.today()
 
     move_to_table(browser, tab_id)
 

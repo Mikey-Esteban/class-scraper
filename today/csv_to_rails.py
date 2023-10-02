@@ -13,12 +13,12 @@ def json_serial(obj):
     raise TypeError ("Type %s not serializable" % type(obj))
 
 test_path = f'./csv/22_03_2023/styles'
-test_date = dumps(datetime.now()-timedelta(1), default=json_serial)
+test_date = dumps(datetime.now(), default=json_serial)
 
 path = f'./csv/{get_date()}/styles'
 files = os.listdir(path)
 
-date = dumps(datetime.now()+timedelta(1), default=json_serial)
+date = dumps(datetime.now(), default=json_serial)
 prod_url = 'https://community-artistry-api.fly.dev/api/v1/social_media_classes'
 local_url = 'http://127.0.0.1:3000/api/v1/social_media_classes'
 

@@ -10,7 +10,7 @@ base_url = 'https://www.gramercydancestudios.com/schedule'
 def run():
 
     # grab date in 'tuesday 3/14' format
-    next_day_formatted = (date.today() + datetime.timedelta(days=1)).strftime('%A %-m/%d').lower()
+    next_day_formatted = (date.today()).strftime('%A %-m/%d').lower()
     # print(next_day_formatted)
     options = Options()
     options.add_argument('--headless')

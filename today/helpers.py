@@ -9,18 +9,10 @@ import datetime
 
 #Use get_date() for tomorrow's date
 def get_date():
-    return (date.today() + datetime.timedelta(days=1)).strftime("%Y%m%d")
+    return (date.today()).strftime("%Y%m%d")
 #Use get_date2() for labeling the table, categorize line 111 - 118 for tomorrow's date
 def get_date2():
-    return (date.today() + datetime.timedelta(days=1)).strftime("%m/%d/%Y")
-
-#Use get_date3() for today's date
-def get_date3():
-    return (date.today().strftime("%Y%m%d"))
-
-#Use get_date4() for labeling the table, categorize line 111 - 118 for today's date
-def get_date4():
-    return (date.today().strftime("%m/%d/%Y"))
+    return (date.today()).strftime("%m/%d/%Y")
 
 def day_suffix(myDate):
     date_suffix = ["th", "st", "nd", "rd"]

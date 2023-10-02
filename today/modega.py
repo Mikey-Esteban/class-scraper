@@ -9,7 +9,7 @@ base_url = 'https://sutrapro.com/modega'
 def run():
 
     # grab date in day 'Tuesday Mar 14th' format
-    next_day_formatted = (date.today() + datetime.timedelta(days=1)).strftime('%A %b %d') + day_suffix((date.today() + datetime.timedelta(days=1)).day)
+    next_day_formatted = (date.today()).strftime('%A %b %d') + day_suffix((date.today()).day)
     options = Options()
     options.add_argument('--headless')
     browser = webdriver.Chrome(options=options)

@@ -4,7 +4,7 @@ from helpers import *
 
 gc = gspread.oauth()
 
-spreadsheetId_all = '1HEVy5YVR6hVyK7UuiiEIL_luQYNG2kAcBrpZHA5EuDA'  # Please set spreadsheet ID.
+spreadsheetId_all = '1VcJOUVp-i0i1bw-hK8fhGZTdS3U1-LSFMwbTCQQjN5c'  # Please set spreadsheet ID.
 sheetName = 'All'  # Please set sheet name you want to put the CSV data.
 csvFile = f'csv/{get_date()}/styles/all.csv'  # Please set the filename and path of csv file.
 
@@ -18,7 +18,7 @@ sh.values_update(
     body={'values': list(csv.reader(open(csvFile)))}
 )
 
-spreadsheetId_tabbed = '1etM9aRp0MDspxHVqQQ7u-TJCmi9HvruoZXX0QGG_6jg'  # Please set spreadsheet ID.
+spreadsheetId_tabbed = '1ptMefNH6sGm83zTo0S4KiVs83A4znzKPXFR7cs-3EeQ'  # Please set spreadsheet ID.
 sheetName = 'Street_Data'  # Please set sheet name you want to put the CSV data.
 csvFile = f'csv/{get_date()}/styles/street_styles_choreography.csv'  # Please set the filename and path of csv file.
 
