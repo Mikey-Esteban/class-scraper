@@ -150,7 +150,7 @@ studios = [
         'date_format': '%a %B %d, %Y', 
         'filenames': ['taylor.csv']
     },
-        {
+    {
         'name': 'thehive',
         'table_name': 'Hive NJ',
         'id': '642345', 
@@ -159,6 +159,15 @@ studios = [
         'date_format': '%a %B %d, %Y', 
         'filenames': ['thehive.csv']
     },
+    {
+        'name': 'cre8ivityinmotion',
+        'table_name': 'Cre8ivity NJ',
+        'id': '5727847', 
+        'tab_ids': ['tabA7'], 
+        'func': run_full_week_csv, 
+        'date_format': '%a %B %d, %Y', 
+        'filenames': ['cre8ivityinmotion.csv']
+    }
 ]
 
 #TODO: Add The Studio Hoboken https://www.wellnessliving.com/rs/schedule/the_studio_at_hoboken?k_business=318213&k_class_tab=51998&id_class_tab=1#dt_date=2023-08-14&f_distance=50&f_latitude=&f_longitude=&filter=1&id_screen=3&is_appointment_cancel_recurring=&is_appointment_cancel_single=&is_class_cancel=0&&&is_remove=0&is_week=1&&id_screen=3&k_business=318213&&&k_class_tab=51998&&is_location=1&k_promotion=0&k_skin=0&&&s_period=week&&sort=&a_day[]=7%2C1%2C2%2C3%2C4%2C5%2C6&k_day=1,2,3,4,5,6,7&k_time=2,3,1&a_virtual[]=2%2C1

@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.options import Options
 from helpers import *
 import datetime
 
-base_url = 'https://www.pjmstudionyc.com/'
+base_url = 'https://www.pjmdancenyc.com/'
 
 def isManhattan(str):
     return str == '[MAN]'
@@ -20,7 +20,7 @@ def run():
     
     print('running for studio...', 'pjm')
     dates_rows = browser.find_elements(By.CLASS_NAME, 'sZqbM3k')
-    correct_date_index = +2
+    correct_date_index = 5
 
     for i, date_row in enumerate(dates_rows):
         reformatted_date = ' '.join(date_row.text.split('\n'))

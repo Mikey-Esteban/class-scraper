@@ -11,7 +11,7 @@ import datetime
 def get_date():
     return (date.today() + datetime.timedelta(days=1)).strftime("%Y%m%d")
 #Use get_date2() for labeling the table, categorize line 111 - 118 for tomorrow's date
-def get_date_tomorrow2():
+def get_date2():
     return (date.today() + datetime.timedelta(days=1)).strftime("%m/%d/%Y")
 
 #Use get_date3() for today's date

@@ -17,7 +17,7 @@ def run():
     browser.get(base_url)
     
     print('running for studio...', 'modega')
-    correct_day_index = -1
+    correct_day_index = 1
 
     # grab index of next day
     day_containers = browser.find_elements(By.CLASS_NAME, 'card-list__card-group')

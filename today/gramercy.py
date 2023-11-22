@@ -34,7 +34,7 @@ def run():
 
         try:
             h1 = row.find_element(By.TAG_NAME, 'h1')
-            # print('h1:', h1.text.lower())
+            print('h1:', h1.text.lower())
             if h1.text.lower() != next_day_formatted: 
                 # move to top of date
                 top_of_date = browser.execute_script(f"return document.querySelectorAll('.fe-block')[{i}].getBoundingClientRect().top")
