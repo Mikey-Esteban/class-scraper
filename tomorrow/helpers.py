@@ -81,9 +81,9 @@ def get_class_data(browser, rows, studio_name):
     class_data = add_header(browser, [])
 
     for row in rows:
-        tds = row.find_elements(By.TAG_NAME, 'td')
+        cols = row.find_elements(By.CLASS_NAME, 'col')
         row_data = [studio_name]
-        for index, td in enumerate(tds):
+        for index, td in enumerate(cols):
             if index == 1:
                 add_sign_up_link(td, row_data)
             else:
