@@ -73,7 +73,7 @@ def get_class_data(browser, rows, studio_name):
     class_data = add_header(browser, [])
 
     for row in rows:
-        tds = row.find_elements(By.TAG_NAME, 'td')
+        tds = row.find_elements(By.CLASS_NAME, 'col')
         row_data = [studio_name]
         for index, td in enumerate(tds):
             if index == 1:
