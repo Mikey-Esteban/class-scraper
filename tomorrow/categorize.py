@@ -27,7 +27,7 @@ other = []
 is_tap = ['tap']
 is_theater = ['theater','broadway']
 is_ballet = ['ballet','pointe','barre','ballez']
-is_contemporary_modern = ['contemp','modern','horton','graham','dunham','limón','cunningham','gaga', 'lyrical']
+is_contemporary_modern = ['contemp','modern','horton','graham','dunham','limón','cunningham','gaga', 'lyrical', 'empowered expression']
 is_street = ['hip hop', 'hip-hop', 'tutting', 'heels', 'styling free','stilettos',
              'popping','breaking','jerz','jersey','locking','house','street','urban',
              'chairography','vogue','choreo','pop up','funk','wacking','waacking',
