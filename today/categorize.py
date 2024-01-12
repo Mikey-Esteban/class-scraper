@@ -50,6 +50,9 @@ for f in files:
         if studio == 'atdf':
             tap.append(row[1])
             continue
+        if studio == 'taylor school':
+            contemporary_modern.append(row[1])
+            continue
 
         class_name = row[1][2].lower()
         style_found = False
