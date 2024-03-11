@@ -31,7 +31,7 @@ is_contemporary_modern = ['contemp','modern','horton','graham','dunham','limón'
 is_street = ['hip hop', 'hip-hop', 'tutting', 'heels', 'styling free','stilettos',
              'popping','breaking','jerz','jersey','locking','house','street','urban',
              'chairography','vogue','choreo','pop up','funk','wacking','waacking',
-             'grooves','fusion','hustle','breakin','modega','voguing', 'litefeet', 'expressive', 'krump', 'shapes', 'master', 'battle', 'jen bayan', 'pop-up', 'freestyle session']
+             'grooves','fusion','hustle','breakin','modega','voguing', 'litefeet', 'expressive', 'krump', 'shapes', 'battle', 'jen bayan', 'pop-up', 'freestyle session']
 is_jazz = ['jazz']
 is_world = ['salsa', 'afro', 'african', 'dancehall', 'reggaeton', 'congolese', 
             'sabar', 'haitian','mambo', 'samba', 'bhangra', 'capoeira','latin','guinean', 'indian', 'flamenco', 'senegalese']
@@ -50,9 +50,9 @@ for f in files:
         if studio == 'atdf':
             tap.append(row[1])
             continue
-        if studio == 'taylor school':
-            contemporary_modern.append(row[1])
-            continue
+        # if studio == 'taylor school':
+        #     contemporary_modern.append(row[1])
+        #     continue
 
         class_name = row[1][2].lower()
         style_found = False
