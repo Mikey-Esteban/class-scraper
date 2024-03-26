@@ -2,7 +2,7 @@ import pandas as pd
 from datetime import datetime
 
 def strip_time(df):
-    df['Start time'] = df['Start time'].str.split('EST').str[0]
+    df['Start time'] = df['Start time'].str.split('EDT').str[0]
     df['Start time'] = df['Start time'].replace(to_replace=r'(am|pm)', value=r'\1', regex=True)
     df['Start time'] = df['Start time'].replace(r' ', '', regex=True)
     return df
@@ -16,7 +16,7 @@ def strip_time(df):
 def strip_time2(df):
     def reformat_time(time_str):
         # Remove EDT if present
-        time_str = time_str.split('EST')[0].strip()
+        time_str = time_str.split('EDT')[0].strip()
         # Add ':00' if only the hour is provided
         if time_str[-2:].lower() in ['am', 'pm'] and time_str.count(':') == 0:
             time_str = time_str[:-2] + ':00' + time_str[-2:]

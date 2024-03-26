@@ -9,7 +9,7 @@ base_url = 'https://sutrapro.com/modega'
 def run():
 
     # grab date in day 'Tuesday Mar 14th' format
-    next_day_formatted = (date.today() + datetime.timedelta(days=1)).strftime('%A %b %d') + day_suffix((date.today() + datetime.timedelta(days=1)).day)
+    next_day_formatted = (date.today() + datetime.timedelta(days=0)).strftime('%A %b %d') + day_suffix((date.today() + datetime.timedelta(days=1)).day)
     options = Options()
     options.add_argument('--headless')
     browser = webdriver.Chrome(options=options)
@@ -17,7 +17,7 @@ def run():
     browser.get(base_url)
     
     print('running for studio...', 'modega')
-    correct_day_index = +1
+    correct_day_index = +0
 
     # grab index of next day
     day_containers = browser.find_elements(By.CLASS_NAME, 'card-list__card-group')
