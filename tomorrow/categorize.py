@@ -31,7 +31,7 @@ is_contemporary_modern = ['contemp','modern','horton','graham','dunham','limón'
 is_street = ['hip hop', 'hip-hop', 'tutting', 'heels', 'styling free','stilettos',
              'popping','breaking','jerz','jersey','locking','house','street','urban',
              'chairography','vogue','choreo','pop up','funk','wacking','waacking',
-             'grooves','fusion','hustle','breakin','modega','voguing', 'litefeet', 'expressive', 'krump', 'shapes', 'battle', 'pop-up', 'freestyle session', 'mujo', 'waving', 'session']
+             'grooves','hustle','breakin','modega','voguing', 'litefeet', 'expressive', 'krump', 'shapes', 'battle', 'pop-up', 'freestyle session', 'mujo', 'waving', 'session', 'chicago footwork']
 is_jazz = ['jazz']
 is_world = ['salsa', 'afro', 'african', 'dancehall', 'reggaeton', 'congolese', 
             'sabar', 'haitian','mambo', 'samba', 'bhangra', 'capoeira','latin','guinean', 'indian', 'flamenco', 'senegalese']
