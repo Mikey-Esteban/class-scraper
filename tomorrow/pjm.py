@@ -20,7 +20,7 @@ def run():
     
     print('running for studio...', 'pjm')
     dates_rows = browser.find_elements(By.CLASS_NAME, 'sZqbM3k')
-    correct_date_index = +1
+    correct_date_index = +3
 
     for i, date_row in enumerate(dates_rows):
         reformatted_date = ' '.join(date_row.text.split('\n'))

@@ -159,14 +159,23 @@ studios = [
         'date_format': '%a %B %d, %Y', 
         'filenames': ['thehive.csv']
     },
+    # {
+    #     'name': 'cre8ivityinmotion',
+    #     'table_name': 'Cre8ivity NJ',
+    #     'id': '5727847', 
+    #     'tab_ids': ['tabA7'], 
+    #     'func': run_full_week_csv, 
+    #     'date_format': '%a %B %d, %Y', 
+    #     'filenames': ['cre8ivityinmotion.csv']
+    # },
     {
-        'name': 'cre8ivityinmotion',
-        'table_name': 'Cre8ivity NJ',
-        'id': '5727847', 
+        'name': 'thefemmily',
+        'table_name': 'The Femmily (Female Only)',
+        'id': '5735205', 
         'tab_ids': ['tabA7'], 
         'func': run_full_week_csv, 
         'date_format': '%a %B %d, %Y', 
-        'filenames': ['cre8ivityinmotion.csv']
+        'filenames': ['thefemmily.csv']
     }
 ]
 
