@@ -170,7 +170,7 @@ studios = [
     # },
     {
         'name': 'thefemmily',
-        'table_name': 'The Femmily (Female Only)',
+        'table_name': 'Femmily',
         'id': '5735205', 
         'tab_ids': ['tabA7'], 
         'func': run_full_week_csv, 
